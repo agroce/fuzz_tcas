@@ -174,6 +174,8 @@ TEST(TCAS, Basic)
 
     int result = alt_sep_test();
 
+    fprintf(stdout, "result = %d\n", result);
+
     int Pos_Thresh = Positive_RA_Alt_Thresh[Alt_Layer_Value];
     
     if ((Up_Separation >= Pos_Thresh)
